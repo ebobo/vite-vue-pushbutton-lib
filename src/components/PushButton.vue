@@ -1,5 +1,7 @@
 <template>
-  <button class="button">Test</button>
+  <button class="button">
+    <slot></slot>
+  </button>
 </template>
 
 <style scoped>
