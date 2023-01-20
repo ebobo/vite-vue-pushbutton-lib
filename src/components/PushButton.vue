@@ -1,20 +1,5 @@
-<script setup lang="ts">
-import { reactive } from 'vue';
-
-export interface Props {
-  primary?: boolean;
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  primary: false,
-});
-const { primary } = reactive(props);
-</script>
-
 <template>
-  <button class="btn" :class="{ primary }">
-    <slot />
-  </button>
+  <button class="button">Test</button>
 </template>
 
 <style scoped>
